@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b58">
+  <meta name="description" content="Portfolio de Papa Yamsar Diagne : stratégie digitale, communication, SEO, création et gestion de projets numériques.">
+  <title>Papa Yamsar Diagne — Portfolio digital</title>
+  <link rel="icon" href="..//portfolio-papa-yamsar/favicon.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="dark">
+  <div class="rain" id="rain" aria-hidden="true"><div class="rain-layer rain-one"></div><div class="rain-layer rain-two"></div></div>
+  <div class="lightning" id="lightning" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <div class="topline">
+      <span class="topline-brand">PYD<span class="brand-period">.</span> <span>PORTFOLIO / 2026</span></span>
+      <span class="availability" aria-label="Disponible pour un entretien"><span class="availability-dot" aria-hidden="true"></span> Disponible pour un entretien</span>
+      <div class="topline-actions">
+        <button type="button" class="utility-button" id="weatherToggle" aria-pressed="true" title="Désactiver les effets météo"><span aria-hidden="true">☂</span><span class="utility-label">Pluie activée</span></button>
+        <button type="button" class="utility-button" id="themeToggle" aria-pressed="false" title="Passer en mode clair"><span id="themeIcon" aria-hidden="true">☀</span><span class="utility-label" id="themeText">Mode clair</span></button>
+      </div>
+    </div>
+
+    <header class="headline-bar glass">
+      <div>
+        <p class="eyebrow hero-eyebrow"><span class="small-line"></span> OUVERT AUX OPPORTUNITÉS PROFESSIONNELLES</p>
+        <h1>Partout en <em>EUROPE.</em></h1>
+      </div>
+      <button type="button" class="call-button" id="heroPhone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.3 5-2 1.7a15 15 0 0 0 5 5l1.7-2L21 14v3a3 3 0 0 1-3 3A15 15 0 0 1 4 6a3 3 0 0 1 3-3Z"/></svg> Me joindre par téléphone <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <main>
+      <section class="profile-grid" aria-label="Présentation">
+        <div class="portrait-card glass">
+          <div class="portrait-frame">
+            <!-- Remplacer seulement le lien src par votre future photo. -->
+            <img id="portfolioPortrait" src="..//portfolio-papa-yamsar/photodeprofil.png" alt="Portrait de Papa Yamsar Diagne" width="460" height="460">
+          </div>
+          <div class="portrait-caption"><span class="mini-dot"></span> PARIS · FRANCE <span class="portrait-caption-arrow">↗</span></div>
+        </div>
+ 
+        <div class="intro-card glass">
+          <div class="intro-top"><p class="eyebrow">BONJOUR, JE SUIS</p><span class="tiny-deco">01 — 06</span></div>
+          <h2>Papa Yamsar <span>DIAGNE<span class="name-dot">.</span></span></h2>
+          <p class="intro-subtitle">Growth Marketing<span>·</span> Acquisition & Performance <span>·</span> Communication <span>·</span> Gestion de projet</p>
+          <p class="intro-description">Je transforme les ambitions digitales en réalisations à forte valeur ajoutée, en conjuguant  <strong>vision stratégique, maîtrise technique et exigence d’excellence</strong> avec une conviction : la performance se construit dans la <strong>rigueur</strong> et se distingue par <strong>l’impact.</strong></p>
+          <div class="intro-separator"></div>
+          <div class="highlight-row">
+            <div class="highlight"><span class="highlight-icon">✳</span><div><strong>Créativité & innovation</strong><small>Des idées transformées en solutions concrètes</small></div></div>
+            <div class="highlight"><span class="highlight-icon">↗</span><div><strong>Stratégie & performance</strong><small>Des actions digitales orientées résultats</small></div></div>
+            <div class="highlight"><span class="highlight-icon">◈</span><div><strong>Profil polyvalent</strong><small>Marketing · Design · Gestion de projet · Data</small></div></div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="tabs" role="tablist" aria-label="Rubriques du portfolio">
+        <button type="button" class="tab is-active" id="tab-apropos" role="tab" aria-selected="true" aria-controls="panel-apropos" tabindex="0" data-tab="apropos"><span class="tab-index">01</span> À propos</button>
+        <button type="button" class="tab" id="tab-experiences" role="tab" aria-selected="false" aria-controls="panel-experiences" tabindex="-1" data-tab="experiences"><span class="tab-index">02</span> Expériences</button>
+        <button type="button" class="tab" id="tab-projets" role="tab" aria-selected="false" aria-controls="panel-projets" tabindex="-1" data-tab="projets"><span class="tab-index">03</span> Projets</button>
+        <button type="button" class="tab" id="tab-competences" role="tab" aria-selected="false" aria-controls="panel-competences" tabindex="-1" data-tab="competences"><span class="tab-index">04</span> Compétences</button>
+        <button type="button" class="tab" id="tab-formations" role="tab" aria-selected="false" aria-controls="panel-formations" tabindex="-1" data-tab="formations"><span class="tab-index">05</span> Formations</button>
+        <button type="button" class="tab" id="tab-contacts" role="tab" aria-selected="false" aria-controls="panel-contacts" tabindex="-1" data-tab="contacts"><span class="tab-index">06</span> Contacts</button>
+      </nav>
+
+      <div class="content-shell glass" id="contentShell">
+        <div class="content-heading"><div class="heading-rule"></div><p class="eyebrow" id="sectionEyebrow">DÉCOUVRIR MON PROFIL</p><span class="content-number" id="sectionNumber">/ 01</span></div>
+
+        <section class="tab-panel" id="panel-apropos" role="tabpanel" aria-labelledby="tab-apropos" tabindex="0">
+          <div class="about-layout">
+            <div class="copy-column">
+              <span class="section-overline">QUI SUIS-JE ?</span>
+              <h3>L’alliance de la vision stratégique et de <span>l’excellence opérationnelle.</span></h3>
+              <p class="type-text">Animé depuis mon plus jeune âge par une profonde passion pour le numérique et les nouvelles technologies, j’ai très tôt développé un intérêt marqué pour la conception de projets web, le marketing digital et l’entrepreneuriat. Cette curiosité, devenue une véritable vocation, m’a permis de bâtir une vision stratégique du digital, articulée autour de l’innovation, de la performance et de l’excellence opérationnelle.
+               Mes expériences professionnelles, enrichies par diverses initiatives entrepreneuriales, m’ont permis de consolider une expertise pluridisciplinaire en stratégie digitale, référencement naturel et payant (SEO/SEA), publicité sur les réseaux sociaux, analyse de données et optimisation de l’expérience utilisateur. J’ai ainsi forgé une approche rigoureuse, méthodique et résolument orientée vers la création de valeur et l’obtention de résultats tangibles.</p>
+              <p class="type-text">À cette maîtrise des leviers marketing s’ajoute une solide dimension technique, notamment en analyse de performance (GA4, GTM), en tracking côté client et serveur, ainsi qu’en développement front-end (React, JavaScript, Tailwind CSS). Cette complémentarité me confère une compréhension transversale des enjeux numériques, alliant discernement stratégique et maîtrise opérationnelle.
+               Aujourd’hui, mon ambition est de mettre cette polyvalence au service d’une organisation ambitieuse, de contribuer activement à sa croissance et de relever des défis à forte valeur ajoutée. Guidé par une exigence constante d’excellence, un sens affirmé des responsabilités et une culture du résultat, j’aspire à évoluer dans un environnement où l’innovation, la rigueur et la performance constituent de véritables leviers de réussite.</p>
+            </div>
+            <aside class="about-aside"><span class="aside-icon">✦</span><h4>Ma signature</h4><p>Comprendre le besoin. Structurer la méthode. Soigner chaque détail. Livrer un résultat qui a du sens.</p><div class="aside-line"></div><small>DES IDÉES CLAIRES.<br>UNE EXÉCUTION SOLIDE.</small></aside>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="panel-experiences" role="tabpanel" aria-labelledby="tab-experiences" tabindex="0" hidden>
+          <div class="section-header"><div><span class="section-overline">MON PARCOURS</span><h3>Des missions <span>concrètes.</span></h3></div><p></p></div>
+          <div class="experience-list">
+            <article class="experience-item reveal-item"><div class="date-pill">FEV. 2026 · NOV. 2026 </div><div class="experience-body"><h4>Chargé de Marketing Digital & Communication</h4><p class="company-name">FTCR — Fédération des Tunisiens pour une Citoyenneté des Deux Rives</p><p class="type-text">Communication multicanale : Conception de supports print et digitaux pour valoriser les actions et initiatives associatives.
+              <p>Social Media Management : Élaboration de stratégies éditoriales, création de contenus et pilotage des réseaux sociaux.</p>
+              <p>Webmastering & SEO : Refonte et administration du site WordPress, optimisation de l'expérience utilisateur et de la visibilité organique.</p>
+              <p>Content Marketing : Production de contenus audiovisuels, de campagnes de sensibilisation et de supports promotionnels.</p>
+              <p>Transformation digitale : Digitalisation des processus internes, structuration des bases de données et optimisation du suivi des bénéficiaires.</p>
+            </div><span class="experience-arrow">↗</span></article>
+
+            <article class="experience-item reveal-item"><div class="date-pill">NOV. 2025 — JAN. 2026</div><div class="experience-body"><h4>Chargé de Communication & Webmaster</h4><p class="company-name">1 CLIC 1PROF</p><p class="type-text">Gestion web : Administration, maintenance et actualisation du site internet.
+              <P>Webmastering & UX : Création et optimisation des pages web et des parcours utilisateurs.</P>
+              <P>SEO : Recherche et intégration de mots-clés stratégiques pour renforcer la visibilité organique.</P>
+              <P>Développement web : Conception et intégration de formulaires et de fonctionnalités interactives.</P>
+              <P>Communication digitale : Élaboration de calendriers éditoriaux, rédaction de contenus et production de plus de 25 supports visuels et audiovisuels.</P>
+            </p></div><span class="experience-arrow">↗</span></article>
+
+            <article class="experience-item reveal-item"><div class="date-pill">MAI 2025 – OCT. 2025</div><div class="experience-body"><h4>Chargé de Marketing Digital & Gestion de Projet</h4><p class="company-name">ARONA TRANSPORT</p><p class="type-text">Gestion de projet digital : Coordination des initiatives numériques, du cadrage stratégique au déploiement opérationnel.
+              <P>Webmastering & Content Management : Création, administration et optimisation des contenus web.</P>
+              <P>Stratégie SEO : Déploiement de leviers d'optimisation organique ayant contribué à une hausse du trafic web.</P>
+              <P>Content Marketing : Rédaction de contenus éditoriaux optimisés pour le référencement naturel et l'acquisition de trafic qualifié.</P>
+              <P>Communication digitale & Data Analytics : Production de plus de 33 contenus visuels et audiovisuels, suivi des KPI et analyse des performances digitales.</P>
+            </p></div><span class="experience-arrow">↗</span></article>
+
+            <article class="experience-item reveal-item"><div class="date-pill">JAN. 2024 – JUIL. 2024</div><div class="experience-body"><h4>Chargé de Communication & Marketing Digital</h4><p class="company-name">HOLDING GAYI</p><p class="type-text">Social Media Management : Pilotage opérationnel des comptes TikTok, Instagram et Facebook, et animation des communautés.
+              <P>Content Marketing : Conception et diffusion de plus de 60 contenus (visuels & audiovisuels) adaptés aux plateformes sociales.</P>
+              <P>Stratégie digitale : Contribution à l'élaboration des stratégies éditoriales et au déploiement de campagnes promotionnelles multicanales.</P>
+              <P>Social Media Analytics : Suivi des KPI, analyse de la portée, des interactions et des performances des contenus.</P>
+              <P>Optimisation de l'engagement : Mise en œuvre d'actions éditoriales ayant contribué à une progression du taux d'engagement global.</P>
+            </p></div><span class="experience-arrow">↗</span></article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="panel-projets" role="tabpanel" aria-labelledby="tab-projets" tabindex="0" hidden>
+          <div class="section-header"><div><span class="section-overline">SAVOIR-FAIRE EN ACTION</span><h3>Des projets conçus <span>avec méthode.</span></h3></div><p class="type-text"></p></div>
+          <div class="project-grid">
+            <article class="project-card reveal-item"><span class="project-symbol">⌘</span><div><span class="project-no">01 / WEB</span><h4>Expérience web</h4><p>Sites vitrines, optimisation UX, interfaces responsives et maintenance.</p></div><span class="project-arrow">↗</span></article>
+            <article class="project-card reveal-item"><span class="project-symbol">◎</span><div><span class="project-no">02 / VISIBILITÉ</span><h4>Stratégie & contenu</h4><p>Réseaux sociaux, SEO, campagnes et création éditoriale.</p></div><span class="project-arrow">↗</span></article>
+            <article class="project-card reveal-item"><span class="project-symbol">◈</span><div><span class="project-no">03 / IDENTITÉ</span><h4>Branding & design</h4><p>Direction visuelle, supports de communication et cohérence de marque.</p></div><span class="project-arrow">↗</span></article>
+          </div>
+          <p class="confidential-note"><span aria-hidden="true">♧</span>  Certaines réalisations ne peuvent pas être présentées publiquement en raison des accords de confidentialité conclus avec mes clients et partenaires. Je peux néanmoins détailler ma démarche lors d'un entretien.</p>
+        </section>
+
+        <section class="tab-panel" id="panel-competences" role="tabpanel" aria-labelledby="tab-competences" tabindex="0" hidden>
+          <div class="section-header"><div><span class="section-overline">MA BOÎTE À OUTILS</span><h3>Les bons outils, <span>au bon moment.</span></h3></div><p></p></div>
+          <div class="skills-layout">
+            <div class="skill-group"><h4>Web & développement</h4><div class="skills-grid">
+              <div class="skill-tile"><span class="tool-logo logo-wordpress">W</span><span>WordPress</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-html">5</span><span>HTML5</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-css">3</span><span>CSS3</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-js">JS</span><span>JavaScript</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-react">⚛</span><span>React</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-webflow">W</span><span>Webflow</span></div>
+            </div></div>
+            <div class="skill-group"><h4>Création & design</h4><div class="skills-grid">
+              <div class="skill-tile"><span class="tool-logo logo-ps">Ps</span><span>Photoshop</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-ai">Ai</span><span>Illustrator</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-ind">Id</span><span>InDesign</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-canva">C</span><span>Canva</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-capcut">✂</span><span>CapCut</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-figma">◈</span><span>Figma</span></div>
+            </div></div>
+            <div class="skill-group"><h4>Marketing & pilotage</h4><div class="skills-grid">
+              <div class="skill-tile"><span class="tool-logo logo-google">G</span><span>Google Ads</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-meta">∞</span><span>Meta Ads</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-seo">↗</span><span>SEO</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-analytics">▥</span><span>Analytics</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-n8n">⤴</span><span>n8n</span></div>
+              <div class="skill-tile"><span class="tool-logo logo-notion">N</span><span>Notion</span></div>
+            </div></div>
+          </div>
+          <p class="skill-disclaimer"></p>
+        </section>
+
+        <section class="tab-panel" id="panel-formations" role="tabpanel" aria-labelledby="tab-formations" tabindex="0" hidden>
+          <div class="section-header"><div><span class="section-overline">APPRENDRE POUR AVANCER</span><h3>Formation & <span>curiosité continue.</span></h3></div><p></p></div>
+          <div class="formation-grid">
+            <article class="formation-primary reveal-item"><span class="degree-mark">M.</span><div><span class="project-no">2024 — 2026 · PARIS</span><h4>Mastère Stratégie Digitale & Management de Projet</p></h4><p class="type-text">SUPDEWEB Paris — MediaSchool. Formation aux stratégies de communication digitale, au pilotage des projets numériques, au marketing et à l'expérience utilisateur.</p></div></article>
+            <article class="formation-primary reveal-item"><span class="degree-mark">MSc</span><div><span class="project-no">2026 — 2028 · PARIS</span><h4>Management de Projets Data et Transformation Numérique</h4><p class="type-text">PPA — Business School. des experts capables de piloter, de transformer, d’intégrer les données dans la stratégie d’entreprise.</p></div></article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="panel-contacts" role="tabpanel" aria-labelledby="tab-contacts" tabindex="0" hidden>
+          <div class="contact-layout"><div class="contact-copy"><span class="section-overline">FAISONS CONNAISSANCE</span><h3>Une idée, un poste, <span>un échange ?</span></h3><p class="type-text">Je suis ouvert à un entretien pour discuter d'une mission, d'un projet ou d'une collaboration. N'hésitez pas à me contacter : je serai heureux d'échanger avec vous.</p><span class="contact-stamp">DISPONIBLE POUR UN ENTRETIEN <span class="mini-dot"></span></span></div>
+            <div class="contact-actions"><button type="button" class="contact-action" id="contactPhone"><span class="contact-action-icon">☎</span><span><strong>Par téléphone</strong><small>Afficher le numéro et appeler</small></span><span class="contact-action-arrow">↗</span></button><button type="button" class="contact-action" id="contactEmail"><span class="contact-action-icon">✉</span><span><strong>Par e-mail</strong><small>Ouvrir votre messagerie ou Outlook</small></span><span class="contact-action-arrow">↗</span></button><div class="location-detail">⌁ <span>Partout en France, France</span></div></div>
+          </div>
+        </section>
+      </div>
+
+      <p class="content-hint"><span class="hint-spark">✦</span> Sélectionnez une rubrique pour explorer mon univers <span class="hint-arrow">↗</span></p>
+    </main>
+
+    <footer class="footer glass"><span>© <span id="copyrightYear">2026</span> Papa Yamsar DIAGNE <span class="footer-muted">— Tous droits réservés</span></span><button type="button" class="footer-link" id="legalOpen">Mentions légales</button><button type="button" class="footer-link footer-email" id="footerEmail">pa.yamsar.diagne@gmail.com <span aria-hidden="true">↗</span></button></footer>
+  </div>
+
+  <dialog class="modal" id="phoneDialog" aria-labelledby="phoneDialogTitle"><div class="modal-inner"><button type="button" class="close-modal" data-close-dialog aria-label="Fermer">×</button><div class="modal-icon">☎</div><p class="eyebrow">PRENONS CONTACT</p><h2 id="phoneDialogTitle">Échangeons par téléphone.</h2><p class="modal-description">Mon numéro de téléphone :</p><div class="revealed-number" id="phoneNumber">(à remplir)</div><a id="callNow" class="modal-primary" href="#" hidden>Appeler maintenant ↗</a><p class="placeholder-note" id="phoneHelp">Pour activer l'appel direct, renseignez votre numéro dans le fichier <strong>script.js</strong>, variable <code>phone</code>.</p></div></dialog>
+
+  <dialog class="modal" id="emailDialog" aria-labelledby="emailDialogTitle"><div class="modal-inner"><button type="button" class="close-modal" data-close-dialog aria-label="Fermer">×</button><div class="modal-icon">✉</div><p class="eyebrow">ÉCRIVEZ-MOI</p><h2 id="emailDialogTitle">Choisissez votre messagerie.</h2><p class="modal-description">À l'adresse <strong>pa.yamsar.diagne@gmail.com</strong></p><a id="mailDefault" class="modal-primary" href="mailto:pa.yamsar.diagne@gmail.com">Ouvrir mon application e-mail ↗</a><a id="mailOutlook" class="modal-secondary" href="https://outlook.live.com/mail/0/deeplink/compose?to=pa.yamsar.diagne%40gmail.com" target="_blank" rel="noopener noreferrer">Écrire avec Outlook Web ↗</a></div></dialog>
+
+  <dialog class="modal legal-modal" id="legalDialog" aria-labelledby="legalDialogTitle"><div class="modal-inner"><button type="button" class="close-modal" data-close-dialog aria-label="Fermer">×</button><p class="eyebrow">INFORMATIONS LÉGALES</p><h2 id="legalDialogTitle">Mentions légales</h2><p class="placeholder-note"></p><h3>1. Éditeur du site</h3><p>Nom : Papa Yamsar DIAGNE<br>Statut : Etudiant <br>Adresse postale : PARIS <br>Téléphone : 07 83 98 73 82 <br>Adresse e-mail : pa.yamsar.diagne@gmail.com<br>Numéro d'immatriculation, si applicable : XX XX XX XX XX X</p><h3>2. Hébergement</h3><p>Hébergeur : Github<br>Adresse de l'hébergeur : 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, États-Unis<br>Contact de l'hébergeur : hello@thegithubshop.com</p><h3>3. Propriété intellectuelle</h3><p>Les textes, créations, éléments graphiques et autres contenus originaux de ce portfolio sont protégés par le droit applicable. Toute reproduction ou exploitation sans autorisation préalable est interdite, sous réserve des exceptions légales. Les marques et logiciels cités appartiennent à leurs titulaires respectifs.</p><h3>4. Données personnelles</h3><p>Ce site statique ne contient aucun formulaire de collecte et ne met en place aucun outil de suivi ou cookie publicitaire. Si vous me contactez par e-mail ou téléphone, les informations que vous communiquez sont utilisées pour répondre à votre demande. Responsable du traitement : Papa Yamsar DIAGNE. Durée de conservation : 3Mois. Pour exercer vos droits ou poser une question : pa.yamsar.diagne@gmail.com.</p><h3>5. Cookies et préférences</h3><p>Ce portfolio n'installe pas de cookie de mesure d'audience ou publicitaire. Les préférences visuelles sont appliquées uniquement pendant la visite en cours.</p><h3>6. Crédits</h3><p>Conception et contenus : Papa Yamsar DIAGNE. Crédit photographique : Papa Yamsar DIAGNE. Date de dernière mise à jour : 18/11/2026 à 22:53.</p></div></dialog>
+</body>
+</html>
